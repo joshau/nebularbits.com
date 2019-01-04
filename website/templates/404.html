@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block title %}404 | nebular bits{% endblock %}
+{% block body %}
+<div class="row">
+    <div class="col">
+        <p class="display-1 text-center">404 | nebular bits</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <p class="lead text-center">sorry, i can't find you - head back <a href="{{ url_for('general.index') }}">home</a></p>
+    </div>
+</div>
+{% endblock %}

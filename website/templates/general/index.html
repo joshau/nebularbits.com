@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block body %}
+<div class="row">
+    <div class="col"></div>
+    <div class="col">
+        <h1 class="display-1">nebular bits</h1>
+    </div>
+    <div class="col"></div>
+</div>
+<div class="row">
+    <div class="col">
+        <p class="lead text-right">hi, i'm <a href="mailto:joshua@nebularbits.com">joshua</a>. how can i help?</p>
+    </div>
+    <div class="col">
+        <ul class="list-unstyled">
+            <li class="lead"><a href="{{ url_for('static', filename='resume_joshuaWilliams.pdf') }}">resume</a></li>
+            <li class="lead"><a href="https://github.com/joshau">github</a></li>
+        </ul>
+    </div>
+</div>
+{% endblock %}
